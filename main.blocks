@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="wkeaf^Gpg_hu]0?#-QMs">dado</variable></variables><block type="device_gesture_event" id="=J.9Bhh^Liv|cA[)__@k" x="0" y="0"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="mv;6mM1n5hz+VK0l2PVI"><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field><comment pinned="false" h="80" w="160">Genera un número del 1 al 6 al agitar la micro:bit</comment><value name="VALUE"><shadow type="math_number" id="dx+%7O(hU@]E!Bb]2E,_"><field name="NUM">0</field></shadow><block type="device_random" id="[~{[1QTxvr9G{04WR]T`"><value name="min"><shadow type="math_number" id="@7=k54xQFSmaZfS$j2KK"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="qv6ca`pP%(I#Ky4:VT.c"><field name="NUM">6</field></shadow></value></block></value><next><block type="controls_if" id="+c3Z0V-5oj:_UYb+K8GM"><mutation elseif="4" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="S3W6{(ScG$6S|0IjnUJE"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="7C_gir^%RM,gySW8|eWO"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="2=$/KzT8Op4~RgV0a`q$"><field name="NUM">0</field></shadow><block type="variables_get" id="7k/v+O(x)O?z4E_SGF-A"><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field></block></value><value name="B"><shadow type="math_number" id="xS$nE(M8AdB]_r$[:ljA"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id=":sk3L(PFs91#;v%!K@?g"><field name="LEDS">`
+        . # . # . 
+        # . # . # 
+        . # # # . 
+        # . # . # 
+        . # . # .
+        `</field><comment pinned="false" h="80" w="160">SOL: avanza 2 lugares</comment></block></statement><value name="IF1"><shadow type="logic_boolean" id=";+@SPrlhA`h!%(`85fXk"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="u0F6yzoX:rH/M9hpLiPa"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="G=e3F+oF/dI+gj34sa]s"><field name="NUM">0</field></shadow><block type="variables_get" id="4plfT+~+@!ruMdK^8zf%"><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field></block></value><value name="B"><shadow type="math_number" id="CJRhcjp``mWhai8vQ_n;"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="Yn5~Lz1I}Ddpn1gMcQgQ"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . . # . . 
+        . . # . .
+        `</field><comment pinned="false" h="80" w="160">RESGUARDO: avanza 1 lugar</comment></block></statement><value name="IF2"><shadow type="logic_boolean" id="Jl}rAD?:U,UxBz)K3`*s"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=".A,4)ihNztuYIW.L[lyu"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="Jaj76+0ToibZjxHNzpO!"><field name="NUM">0</field></shadow><block type="variables_get" id=",fK~A]_M-cn(O/NL@[D@"><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field></block></value><value name="B"><shadow type="math_number" id="0lAg2G*17Gad3+nsKPkc"><field name="NUM">3</field></shadow></value></block></value><statement name="DO2"><block type="device_show_leds" id="[|G4o0vF~LwV(O9atIt_"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # .
+        `</field><comment pinned="false" h="80" w="160">AGUA: avanza 3 lugares (Actividad 4)</comment></block></statement><value name="IF3"><shadow type="logic_boolean" id="uiig7S|Q[lu%v^M(Tr0O"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="=f9~/cR)F.xFpum{fRB."><field name="OP">EQ</field><value name="A"><shadow type="math_number" id=")itL/9*QYSui!T#2m+[Z"><field name="NUM">0</field></shadow><block type="variables_get" id="%.Ig1Y#RD(H7#3L%E`z("><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field></block></value><value name="B"><shadow type="math_number" id="W%SF.T9*jx`+)Z/ICyu+"><field name="NUM">4</field></shadow></value></block></value><statement name="DO3"><block type="device_show_leds" id="!rw+bu(@~G/8Q_$YH^-J"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field><comment pinned="false" h="80" w="160">BASURA: pierde el turno (Actividad 4)</comment></block></statement><value name="IF4"><shadow type="logic_boolean" id="Bk6eCZk!JP7sidVS`/aT"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="(B,7Nsvn05e0*lNg8kZi"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="xJ?TGR,}lC:97GCaZ.f0"><field name="NUM">0</field></shadow><block type="variables_get" id="=SE[PoD);R|uNFX,6f@^"><field name="VAR" id="wkeaf^Gpg_hu]0?#-QMs">dado</field></block></value><value name="B"><shadow type="math_number" id="?zA0Bj79m(~2-sIG@4uY"><field name="NUM">5</field></shadow></value></block></value><statement name="DO4"><block type="device_show_leds" id="3rRmLPpgm}9efpzakv@f"><field name="LEDS">`
+        . # # . . 
+        # . . # . 
+        . . # # . 
+        . # . . . 
+        # # # # .
+        `</field><comment pinned="false" h="80" w="160">VIENTO: retrocede 2 lugares</comment></block></statement><statement name="ELSE"><block type="device_show_leds" id="3=hZMOggbU,nA/NI6Ve)"><field name="LEDS">`
+        . . . # # 
+        . . . # # 
+        . . # . . 
+        . # . . . 
+        # . . . .
+        `</field><comment pinned="false" h="80" w="160">PALA: vuelve a tirar (por descarte es el valor 6)</comment></block></statement></block></next></block></statement></block></xml>
